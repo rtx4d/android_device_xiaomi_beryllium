@@ -54,10 +54,6 @@ BOARD_HAVE_QCOM_FM := true
 PRODUCT_PACKAGES += \
     init.target.rc
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sdm845
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -83,4 +79,4 @@ PRODUCT_PACKAGES += \
     BerylliumCarrierConfig \
     BerylliumFrameworks \
     BerylliumSystemUI \
-    NoCutoutOverlay
+    BerylliumNoCutoutOverlay
